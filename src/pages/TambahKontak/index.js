@@ -1,11 +1,14 @@
-import { Text, StyleSheet, View } from 'react-native'
+import { Text, StyleSheet, View, TextInput } from 'react-native'
 import React, { Component } from 'react'
+import { InputData } from '../../components'
 
 export default class TambahKontak extends Component {
   render() {
     return (
       <View style={styles.pages}>
-        <Text>TambahKontak</Text>
+        <InputData label="Nama" placeholder="Masukkan Nama" />
+
+        <InputData label="No. HP" placeholder="Masukkan No. HP" keyboardType="number-pad"/>
       </View>
     )
   }
